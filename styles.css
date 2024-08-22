@@ -857,7 +857,7 @@ main .main-container p {
     .fases {
         display: flex;
         align-items: center;
-        padding-left: 10%;
+        padding-left: 5%;
         
     }
 
@@ -939,7 +939,7 @@ main .main-container p {
     }
 
     .contenedor-form {
-        width: 200px;
+        width: 185px;
         height: 275px;
     }
 
