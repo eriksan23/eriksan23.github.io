@@ -1,0 +1,949 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.subtitle {
+    font-size: 70px;
+}
+
+
+/*Estilos de la barra de navegacion
+y del encabezado de la pagina principal*/
+
+.header {
+    background-color: #142335;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    padding: 5px 5%;
+    position: fixed;
+    z-index: 1;
+}
+
+.header .logo {
+    display: flex;
+    width: 115px;
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.1);
+}
+
+ul  {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+}
+
+.header .navlinks {
+    list-style-type: none;
+}
+
+.header .navlinks li{
+    display: inline-block;
+    padding: 0 25px;
+}
+
+.header .navlinks li:hover {
+    transform: scale(1.5);
+    transition: 0.4s;
+}
+
+.header .navlinks a {
+    font-size: 700;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.button-contact {
+    transition: all 0.5s;
+    font-size: 17px;
+    font-weight: bolder;
+    padding: .5ch 1ch;
+    background-color: white;
+    color: #000;
+    font-family: Roboto, sans-serif;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 0px hsl(0, 0%, 90%),
+      4px 4px 0px hsl(0, 0%, 80%),
+      6px 6px 0px hsl(0, 0%, 70%),
+      8px 8px 0px hsl(0, 0%, 60%),
+      10px 10px 0px hsl(0, 0%, 50%),
+      12px 12px 0px hsl(0, 0%, 40%),
+      14px 14px 0px hsl(0, 0%, 30%),
+      16px 16px 0px hsl(0, 0%, 20%),
+      18px 18px 0px hsl(0, 0%, 10%);
+  }
+
+.button-contact:hover {
+    cursor: pointer;
+    background-color: hsl(231, 41%, 55%);
+    color: #fff;
+    box-shadow: none;
+  }
+
+/*Encabezado*/
+
+.main {
+    background-image: url(mainheader-background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.main-container {
+    height: 680px;
+}
+
+.trans {
+    font-weight: bold;
+    font-size: 4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10%;
+    padding-left: 2%;
+    padding-bottom: 0;
+    -webkit-animation: slide-top 1.2s ease-in-out both;
+	        animation: slide-top 1.2s ease-in-out both;
+}
+
+.desktop-guy  {
+    margin-top: 13%;
+    height: 350px;
+    width: 350px;
+}
+
+@-webkit-keyframes slide-top {
+    60% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    0% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+  @keyframes slide-top {
+    60% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    0% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+
+/*Aqui termina encabezado*/
+
+/*Fuentes*/
+
+h3 {
+    font-size: 35px;
+}
+
+
+/*Apps*/
+
+.apps {
+    background-color: #142335;
+    width: 100%;
+    height: 560px;
+}
+
+.fases {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.idea {
+    margin: 10%;
+    margin: 2px;
+    width: 310px;
+    height: 310px;
+    border-radius: 100%;
+    background-color: rgb(195, 206, 201);
+}
+
+
+.fases #ideavideo{
+    width: 290px;
+    height: 290px;
+    border-radius: 100%;
+}
+
+.apps h2 {
+    text-align: right;
+    margin-right: 10%;
+    margin-bottom: 15px;
+    text-shadow: 2px 0px 3px black;
+    color: azure;
+    
+}
+
+#desarrollo {
+    margin-bottom: 10px;
+    text-align: right;
+    margin-right: 7%;
+    color: rgb(255, 254, 254);
+}
+
+/*apps*/
+
+/*internet of things*/
+
+.iot {
+    width: 100%;
+    height: 680px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.headeriot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iot h2 {
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 0;
+    text-shadow: 2px 2px 3px black;
+    color: azure;
+}
+
+
+.iotcontainer {
+    display: flex;  
+    flex-direction: row;   
+    width: 100%;
+    height: max-content;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.worldiot, .farmingiot {
+    padding-bottom: 5%;
+    width: 460px;
+    height: 460px;
+}
+
+.cityiot {
+    padding-top: 5%;
+    width: 460px;
+    height: 460px;
+}
+
+
+/*.toggle {
+    --bg-toggle: hsl(0, 0%, 65%);
+    --bg-circle: hsl(96, 85%, 34%);
+    width: 200px;
+    height: 100px;
+    background-color: var(--bg-toggle);
+    box-shadow: 0 .3rem .9rem 0 rgba(125, 125, 125, 0.25);
+    border-radius: 4rem;
+    display: flex;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    align-items: center;
+    padding: 0 .3rem;
+    transition: background-color 400ms;
+  }
+  
+  .toggle__circle {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    background-color: var(--bg-circle);
+    border: solid grey;
+    border-radius: 50%;
+    position: relative;
+    transition: margin 400ms ease-in-out, background-color 1000ms;
+  }
+  
+  .toggle__circle::after,
+  .toggle__circle::before {
+    content: '';
+    position: absolute;
+    background-color: var(--bg-toggle);
+    bottom: 118%;
+    transform-origin: bottom left;
+  }
+  
+  .toggle__circle::before {
+    width: 30px;
+    height: 30px;
+    left: 32%;
+    border-radius: 0% 100% 0% 100% / 0% 27% 73% 100%;
+    transform: translateX(-70%) rotate(-1deg);
+  }
+  
+  .toggle__circle::after {
+    width: 30px;
+    height: 45px;
+    left: 50%;
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    transform: rotate(15deg);
+  }
+  
+  #checkbox:checked + .toggle > .toggle__circle {
+    margin-left: calc(170px - (.3rem * 2) - 50px);
+  }
+  
+  #checkbox:checked + .toggle {
+    --bg-toggle: hsl(96, 85%, 34%);
+    --bg-circle: hsl(0, 0%, 96%);
+  }
+*/
+
+
+/*iot*/
+
+/*Web*/
+
+.web {
+    width: 100%;
+    height: 600px;
+    background-color: #142335;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    box-shadow:1px 1px 1px black;
+    margin-right: 2%;
+}
+  
+.webicon {
+    margin-top: 12%;
+     width: 100px;
+     height: 100px;
+}
+
+.pages > div {
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    height: 480px;
+}
+
+.title-card {
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 9%;
+}
+
+.web h2 {
+    text-align: right;
+    margin-right: 10%;
+    margin-bottom: .2%;
+    text-shadow: 2px 0px 3px black;
+    color: azure;
+}
+
+.txtweb {
+    color: grey;
+    padding-top: 42px;
+    font-size: 1.20rem;
+    text-align: center;
+    line-height: 38px;
+}
+
+#creamos {
+    text-align: right;
+    margin-right: 10%;
+    margin-bottom: 1.5%;
+    color: #fff;
+    text-shadow: 2px 2px 3px black;
+}
+
+/*web*/
+
+/*Talleres*/
+
+.talleres {
+    width: 100%;
+    height: 660px;
+    background-color: rgba(227, 229, 230, 0.993);
+}
+
+.talleres h2 {
+    text-align: left;
+    padding-top: 6%;
+    margin-left: 10%;
+    text-shadow: 2px 2px 3px black;
+    color: azure;
+}
+
+#taller {
+    text-align: left;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 10%;
+}
+
+.sitiostalleres  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cardtaller {
+    max-width: 80%;
+    width: 30em;
+    height: 280px;
+    margin-top: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: static;
+    transition: all 0.35s ease;
+    border-radius: 21px;
+    box-shadow:  -15px -15px 30px #646464,
+             15px 15px 30px #ffffff;
+}
+
+.cardtaller::before  .cardtaller::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: orange;
+    height: 4px;
+}
+
+.arduinofondo {
+    background-image: url(talleres/arduinofondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+}
+
+.tallerfondo {
+    background-image: url(talleres/tallerfondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;  
+}
+
+.cardtaller::before {
+    width: 0;
+    opacity: 0;
+    transition: opacity 0 ease, width 0 ease;
+    transition-delay: 0.5s;
+}
+
+.cardtaller::after {
+    width: 100%;
+    background: white;
+    transition: width 0.5 ease;
+}
+
+.cardtaller:hover {
+    width: 24em;
+    box-shadow: 0 10px 20px 0 rgba(32, 32, 36, 0.12);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardtaller .content {
+    width: 10em;
+    max-width: 80%;
+}
+
+.cardtaller .arduinoicon .invenceicon{
+    margin: 0 0 1em;
+    width: 10.625em;
+    transition: all 0.35s ease;
+}
+
+.arduinoicon {
+    width: 200px;
+    height: 200px;
+    border-radius: 40%;
+}
+   
+.invenceicon {
+    width: 350px;
+    height: 200px;
+}
+
+.description {
+    background-color: white;
+    color: rgb(7, 6, 7);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+/*talleres*/
+
+/*Proyectos*/
+
+.proyectos {
+    background-color: #ffffff;
+}
+
+.card-proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    justify-items: center;
+}
+
+.card-proyectos img {
+    height: 95px;
+}
+
+.proyectos h2 {
+    text-align: right;
+    margin-right: 10%;
+    text-shadow: 2px 0px 3px black;
+    color: azure;
+}
+
+#proyecto {
+    font-size: 180%;
+    text-align: right;
+    margin-right: 10%;
+    margin-bottom: 4%;
+}
+
+
+/*proyectos*/
+
+/*Pie de pagina*/
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    }
+
+.pie {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(227, 229, 230, 0.993);
+}
+
+.invencefoot {
+    margin-right: 60px;
+    width: 150px;
+    height: 80px;
+}
+
+.socialmedia {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.socialicon {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.contenedor-form {
+    width: max-content;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.32);
+-moz-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.32);
+box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.32);
+}
+
+input {
+    appearance: none;
+    border: 0;
+}
+
+.contactanos {
+    font-size: 1.75rem;
+    color: #3C3B3B;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    font-weight: 540;
+    padding: .75rem;
+    border: solid rgba(91, 104, 224, 0.459) 1px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px 10px rgba(#000000, .25);   
+}
+
+.info-text {
+    position: absolute;
+    color: #358fb36c;
+    top: 1.5rem;
+    transition: .25s ease;
+}
+
+.input1{
+    display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	padding-top: 1.5rem;
+	&+.input {
+		margin-top: 1.5rem;
+	}
+}
+
+.campo-input {
+        border: 0;
+        z-index: 1;
+        background-color: transparent;
+        border-bottom: 2px solid #eee; 
+        font: inherit;
+        font-size: 1.125rem;
+        padding: .25rem 0;
+        &:focus, &:valid {
+            outline: 0;
+            border-bottom-color: #6658d3;
+            &+.info-text {
+                color: #6658d3;
+                transform: translateY(-1.5rem);
+            }
+        }
+    }
+    
+    .action {
+        margin-top: 2rem;
+    }
+
+.downline {
+    width: 95vw; 
+    border-bottom: solid black;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.info {
+    background-color: rgba(227, 229, 230, 0.993);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.registros {
+    width: 60px;
+    height: 50px;
+}
+
+.registro {
+    width: 100px;
+    height: 60px;
+}
+
+footer h4 {
+    font-size: 2.1em;
+    
+}
+
+/*Footer*/
+
+/*Querys*/
+
+@media screen and (max-width: 600px) {
+
+.header {
+    display: flex;
+    max-width: 600px;
+    justify-content: center;
+}
+
+.header .navlinks {
+    display: none;
+}
+
+.main-container {
+    height: 450px;
+}
+
+main .main-container p {
+    font-size: 3.2rem;
+    padding-top: 10%;
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+.seccion .subtitle { 
+    font-size: 50px;
+}
+
+.seccion h3 {
+    font-size: 23px;
+}
+
+.pages .card {
+    height: 220px;
+    width: 200px;
+    margin-bottom: 0px;
+}
+
+.card .txtweb {
+    display: none;
+}
+
+.invenceicon {
+    width: 15em;
+    height: 10em;
+}
+
+.arduinoicon {
+    width: 11em;
+    height: 10.8em;
+}
+
+.description {
+    font-size: 12px;
+    font-weight: 600;
+    
+}
+
+.cardtaller {
+    max-width: 45%;
+    width: 15em;
+    height: 350px;
+    margin-top: 40px;
+}
+
+.invencefoot {
+    display: none;
+}
+
+.contenedor-form {
+    margin-left: 12%;
+}
+
+.iconosredes {
+    margin-left: 95px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 9px;
+    grid-row-gap: 9px;
+}
+
+.contact {
+    display: none;
+}
+
+/*Querys Animaciones-Videos*/
+
+.desktop-guy {
+    display: none;
+}
+
+.fases {
+    width: 150px;
+    height: 150px;
+}
+
+.idea {
+    margin-top: 50%;
+    width: 195px;
+    height: 198px;
+    border-radius: 100%;
+    background-color: rgb(195, 206, 201);
+}
+
+.fases #ideavideo {
+    margin-top: 8%;
+    width: 185px;
+    height: 165px;
+    border-radius: 100%;
+}
+
+.iotcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.videoiot {
+    width: 280px;    
+    height: 280px;
+}
+
+}
+
+@media screen and (max-width: 430px) {
+
+    .header {
+        border-radius: 2%;
+        max-width: 430px;
+    }
+
+    .main-container {
+        max-width: 480px;
+        height: 360px;
+    }
+
+    main .main-container p {
+    padding-top: 25%;
+    padding-right: 0%;
+    font-size: .6em;
+    margin: auto;
+    margin-left: 11%;
+    }
+
+    .seccion > .subtitle { 
+        font-size: 2.2em;
+    }
+    
+     #desarrollo, #creamos, #controla, #taller, #proyecto{
+        font-size: 1.1em;
+    }
+
+    #apps {
+        max-width: 430px;
+        height: 350px;
+        border-radius: 2%;
+    }
+    
+    .fases {
+        display: flex;
+        align-items: center;
+        padding-left: 10%;
+        
+    }
+
+    .fases #ideavideo {
+        width: 110px;
+        height: 110px;
+    }
+
+    .fases .idea {
+        width: 120px;
+        height: 120px;
+    }
+
+    .iotcontainer {
+        display: grid;
+    }
+
+    .videoiot {
+        width: 190px;
+        height: 190px;
+    }
+
+    .pages .card {
+        width: 175px;
+        height: 215px;
+        border-radius: 5%;
+    }
+
+    .talleres {
+        height: 430px;
+    }
+
+    .cardtaller {
+        display: inline-block;
+        width: 170px;
+        height: 170px;
+        background-size: 170px 170px;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .invenceicon {
+        width: 185px;
+        height: 120px;
+        padding-left: 18%;
+        padding-top: 18%;
+    }
+
+    .arduinoicon {
+        width: 150px;
+        height: 150px;
+        padding-left: 18%;
+        padding-top: 18%;
+    }
+
+    .card-proyectos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 25px;
+        grid-row-gap: 35px;
+    }
+
+    .proyectos img {
+        width: 140px;
+        height: 75px;        
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .info {
+        display: grid;
+        grid-row-gap: 10px;
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .contenedor-form {
+        width: 200px;
+        height: 275px;
+    }
+
+
+
+}
+
