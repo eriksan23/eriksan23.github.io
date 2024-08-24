@@ -16,6 +16,13 @@ body {
     font-size: 70px;
 }
 
+video::-webkit-media-controls {
+    display: none !important;
+    opacity: 0; 
+  }
+  video::-webkit-media-controls-start-playback-button {
+      display: none !important;
+  }
 
 /*Estilos de la barra de navegacion
 y del encabezado de la pagina principal*/
