@@ -16,14 +16,6 @@ body {
     font-size: 70px;
 }
 
-video::-webkit-media-controls {
-    display: none !important;
-    opacity: 0; 
-  }
-  video::-webkit-media-controls-start-playback-button {
-      display: none !important;
-  }
-
 /*Estilos de la barra de navegacion
 y del encabezado de la pagina principal*/
 
@@ -818,7 +810,7 @@ main .main-container p {
 
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 393px) {
 
     .header {
         border-radius: 2%;
@@ -826,7 +818,7 @@ main .main-container p {
     }
 
     .main-container {
-        max-width: 480px;
+        max-width: 430px;
         height: 360px;
     }
 
@@ -863,15 +855,25 @@ main .main-container p {
         height: 105px;
     }
 
-     .iotcontainer .videoiot {
-        width: 220px;
-        height: 200px;
+    .seccion .iotcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+     .videoiot {
+        width: 200px;
+        height: 180px;
      }
 
     .pages .card {
         width: 175px;
         height: 215px;
         border-radius: 5%;
+    }
+
+    .card .txtweb {
+        display:  none;
     }
 
     .talleres {
@@ -930,8 +932,5 @@ main .main-container p {
         width: 185px;
         height: 275px;
     }
-
-
-
 }
 
